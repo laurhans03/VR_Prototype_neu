@@ -1,0 +1,40 @@
+{
+  "menuMusic": "media/menuMusic.mp3",
+  "videos": [
+    {
+      "id": "1",
+      "title": "Clearing in the forest",
+      "src": "media/room1.mp4",
+      "music": "media/background.mp3"
+
+    },
+    {
+      "id": "2",
+      "title": "River floating",
+      "src": "media/room2.mp4",
+      "music": "media/background.mp3"
+    },
+    {
+      "id": "3",
+      "title": "Sea with rocks",
+      "src": "media/room3.mp4",
+      "music": "media/background.mp3"
+    },
+     {
+      "id": "4",
+      "title": "Hammarö udde",
+      "src": "media/room4.mp4",
+      "music": "media/background.mp3"
+    },
+    {
+      "id": "5",
+      "title": "Bymiljövägen",
+      "src": "media/room5.mp4"
+    },
+    {
+      "id": "6",
+      "title": "Labor1",
+      "src": "media/TestLab1.mp4"
+    }
+  ]
+}
