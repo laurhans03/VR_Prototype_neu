@@ -47,7 +47,7 @@
       progressRing is a separate ring used as a circular progress indicator for fuse actions.
     -->
         <a-entity id="cameraRig" position="0 0 0">
-            <a-entity id="camera" camera position="0 1.4 0" look-controls="enabled: false"
+            <a-entity id="camera" camera position="0 1.4 0" look-controls="enabled: true; magicWindowTrackingEnabled: false"
                 wasd-controls="enabled: false">
             </a-entity>
 
@@ -72,7 +72,7 @@
     -->
         <a-entity id="menu" visible="true">
             <a-videosphere src="#menu_img" rotation="0 -102 0"></a-videosphere>
-            <a-text id="welcomeText" value="Welcome. Select a video:" align="center" color="#ffffff" width="3"></a-text>
+            <a-text id="welcomeText" value="Welcome. Select a video" align="center" color="#ffffff" width="3"></a-text>
         </a-entity>
 
         <!--
@@ -296,8 +296,8 @@
             }
 
             // --- Position the welcome text and base Y for icons based on camera height ---
-            const iconsBaseY = 1.4;
-            const welcomeTextY = 2.0;
+            const iconsBaseY = 1.6;
+            const welcomeTextY = 2.2;
 
 
             let welcome = document.querySelector('#welcomeText');
