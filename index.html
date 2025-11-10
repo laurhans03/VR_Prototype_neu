@@ -47,21 +47,20 @@
       progressRing is a separate ring used as a circular progress indicator for fuse actions.
     -->
         <a-entity id="cameraRig" position="0 0 0">
-            <a-entity id="camera" camera position="0 1.4 0" look-controls="enabled: true; magicWindowTrackingEnabled: false"
-                wasd-controls="enabled: false">
-            </a-entity>
+            <a-entity id="camera" camera position="0 1.4 0"
+                look-controls="enabled: true; magicWindowTrackingEnabled: false" wasd-controls="enabled: false">
 
-            <!-- Base of the gaze cursor (invisible by default, shown via script) -->
-            <a-entity id="cursorBase" cursor="fuse: true; fuseTimeout: 2000" position="0 0 -0.5"
-                geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
-                material="color: transparent; shader: flat">
-            </a-entity>
+                <!-- Base of the gaze cursor (invisible by default, shown via script) -->
+                <a-entity id="cursorBase" cursor="fuse: true; fuseTimeout: 2000" position="0 0 -0.5"
+                    geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
+                    material="color: transparent; shader: flat">
+                </a-entity>
 
-            <!-- Progress ring (visual timer when fusing a clickable element) -->
-            <a-ring id="progressRing" radius-inner="0.011" radius-outer="0.02" position="0 0 -0.49" color="#FFD700"
-                theta-start="0" theta-length="0" material="shader: flat; side: double">
-            </a-ring>
-        </a-entity>
+                <!-- Progress ring (visual timer when fusing a clickable element) -->
+                <a-ring id="progressRing" radius-inner="0.011" radius-outer="0.02" position="0 0 -0.49" color="#FFD700"
+                    theta-start="0" theta-length="0" material="shader: flat; side: double">
+                </a-ring>
+            </a-entity>
         </a-entity>
 
         <!--
@@ -72,7 +71,7 @@
     -->
         <a-entity id="menu" visible="true">
             <a-videosphere src="#menu_img" rotation="0 -102 0"></a-videosphere>
-            <a-text id="welcomeText" value="Welcome. Select a video!" align="center" color="#ffffff" width="3"></a-text>
+            <a-text id="welcomeText" value="Welcome. Select a video:" align="center" color="#ffffff" width="3"></a-text>
         </a-entity>
 
         <!--
@@ -170,7 +169,7 @@
 
                 // --- Fixed avatar height to maintain sitting posture ---
                 const fixedY = 1.1;
-               anchorObj.position.set(0, 1.1, -0.3);
+                anchorObj.position.set(0, 1.1, -0.3);
 
                 // --- Get head orientation ---
                 const euler = new THREE.Euler().setFromQuaternion(cam.quaternion, 'YXZ');
@@ -296,7 +295,7 @@
             }
 
             // --- Position the welcome text and base Y for icons based on camera height ---
-            const iconsBaseY = 2.6;
+            const iconsBaseY = 2.4;
             const welcomeTextY = 3.0;
 
 
