@@ -71,7 +71,7 @@
     -->
         <a-entity id="menu" visible="true">
             <a-videosphere src="#menu_img" rotation="0 -102 0"></a-videosphere>
-            <a-text id="welcomeText" value="Welcome. Select a video:" align="center" color="#ffffff" width="3"></a-text>
+            <a-text id="welcomeText" value="Welcome. Select a video" align="center" color="#ffffff" width="3"></a-text>
         </a-entity>
 
         <!--
@@ -98,10 +98,10 @@
             </a-circle> -->
 
             <!-- Return zone and return button (used to go back to menu) -->
-            <a-plane id="returnZone" position="0 1.175 -1.2" rotation="90 0 0" width="0.18" height="0.9"
+            <a-plane id="returnZone" position="0 1.375 -0.8" rotation="90 0 0" width="0.18" height="0.9"
                 material="color: #00ff00; opacity: 0; transparent: true" class="clickable" visible="false"></a-plane>
 
-            <a-image id="returnButton" src="#backbutton" position="0 1.2 -1.2" width="0.1" height="0.1" visible="true"
+            <a-image id="returnButton" src="#backbutton" position="0 1.4 -0.8" width="0.1" height="0.1" visible="true"
                 material="opacity: 0.9; transparent: true"></a-image>
         </a-entity>
 
@@ -169,7 +169,7 @@
 
                 // --- Fixed avatar height to maintain sitting posture ---
                 const fixedY = 1.1;
-                anchorObj.position.set(0, 1.1, -0.3);
+                anchorObj.position.set(0, 0, 0);
 
                 // --- Get head orientation ---
                 const euler = new THREE.Euler().setFromQuaternion(cam.quaternion, 'YXZ');
@@ -523,7 +523,7 @@
             hintText.setAttribute('align', 'center');
             hintText.setAttribute('color', '#ffffff');
             hintText.setAttribute('width', '2.2');
-            hintText.setAttribute('position', '0 0 0');
+            hintText.setAttribute('position', '0 0.5 0');
             hintText.setAttribute('baseline', 'center');
             hintText.setAttribute('side', 'double');
             hintContainer.appendChild(hintText);
